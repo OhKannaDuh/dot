@@ -1,0 +1,59 @@
+[
+  {
+    "name": "top_bar",
+    "layer": "top",
+    "position": "top",
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": [],
+
+    "hyprland/workspaces": {
+      "format": "{icon}",
+      "format-icons": {
+        "default": "",
+        "active": "",
+        "urgent": "",
+      },
+    },
+  },
+  {
+    "name": "bottom_bar",
+    "layer": "top",
+    "position": "bottom",
+    "output": "eDP-1",
+    "modules-left": ["tray"],
+    "modules-center": [],
+    "modules-right": ["pulseaudio", "battery", "memory", "cpu"],
+
+    "pulseaudio": {
+      "format": "{volume}% {icon}",
+      "format-icons": {
+        "default": ["", "", ""],
+      },
+      "on-click": "pavucontrol",
+    },
+
+    "battery": {
+      "states": {
+        "good": 95,
+        "warning": 30,
+        "critical": 15,
+      },
+      "format": "{capacity}% {icon}",
+      "format-full": "{capacity}% {icon}",
+      "format-charging": "{capacity}% 󰂄",
+      "format-plugged": "{capacity}% 󰂄",
+      "format-alt": "{time} {icon}",
+      "format-icons": ["", "", "", "", ""],
+    },
+
+    "memory": {
+      "format": "{}% ",
+    },
+
+    "cpu": {
+      "format": "{usage}% 󰍛",
+      "tooltip": false,
+    },
+  },
+]

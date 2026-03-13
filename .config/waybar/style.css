@@ -1,0 +1,28 @@
+window#waybar {
+    background: rgba(24, 24, 24, 0.5);
+    color: #ffffff;
+}
+
+window#waybar.top_bar {
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(35deg, #f7a8ff, #fcdcff) 1;
+}
+
+window#waybar.bottom_bar {
+    border-top: 1px solid transparent;
+    border-image: linear-gradient(35deg, #f7a8ff, #fcdcff) 1;
+}
+
+#workspaces button {
+    color: #f7a8ff;
+}
+
+window#waybar.bottom_bar .modules-right > * {
+    font-family: "Symbols Nerd Font Mono", "FireCode Nerd Font", sans-serif;
+}
+
+window#waybar.bottom_bar .modules-right .module {
+    padding: 4px;
+    border-left: 1px solid transparent;
+    border-image: linear-gradient(35deg, #f7a8ff, #fcdcff) 1;
+}
